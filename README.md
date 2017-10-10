@@ -8,7 +8,7 @@ Crawlerino 是一個python 3 的網頁爬蟲，它的設計理念是方便的讓
 * 它不處理架構的問題
 * It doesn't spoof headers. Again, easy to add via requests if desired.
 * 它忽略robots.txt.
-
+cd 
 它使用 ```requests``` 及 ```Beautiful Soup (bs4)```組件，讓程式碼看上去更清爽
 
 
@@ -19,7 +19,7 @@ crawlenino 並沒有包裝成python組件，不過，不引響你使用它，它
 c:\myfolder> pip install requests
 c:\myfolder> pip install beautifulsoup4
 ```
-Then you can run crawlerino with the command ```python crawlerino```, and you'll see the output from the test case:
+接下來你只要執行以下指令```python crawlerino.py```, 接下來你就會看到輸出結果如下圖所示:
 
 ![screenshot](images/testrun.png)
 

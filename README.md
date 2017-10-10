@@ -1,6 +1,7 @@
 <properties LandingPageTags="Python,webscraping,webcrawling" />
 # crawlerino - simple Python 3 web crawler
-Crawlerino is a web crawler written in Python 3, and is intended to be used as a starting point for building customized web crawlers to perform various tasks. NOTE: the code is optimized for *readability and flexibility*, not for performance.
+Crawlerino 是一個python 3 的網頁爬蟲
+is a web crawler written in Python 3, and is intended to be used as a starting point for building customized web crawlers to perform various tasks. NOTE: the code is optimized for *readability and flexibility*, not for performance.
 
 The emphasis here is on simplicity, and to that end here are some things that crawlerino does _not_ handle:
 

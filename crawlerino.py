@@ -211,6 +211,6 @@ def wordcount(soup):
 # if running standalone, crawl some Microsoft pages as a test
 if __name__ == "__main__":
     START = default_timer()
-    crawler('http://www.pingle.com.tw', maxpages=1, singledomain=True)
+    crawler('http://www.pingle.com.tw', maxpages=100, singledomain=True)
     END = default_timer()
     print('Elapsed time (seconds) = ' + str(END-START))

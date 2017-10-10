@@ -15,13 +15,13 @@ cd
 
 
 ## 安裝
-crawlenino 並沒有包裝成python組件，不過，不引響你使用它，它只依賴了兩個組件，所以你大可自已安裝它們，當然python 3.x是必要的，再來你只要按照正常方式安裝requests及Beautiful即可
+crawlenino 並沒有包裝成python組件，不過，這並不會影響你使用它，它只依賴了兩個組件，所以你大可自已安裝它們，當然python 3.x是必要的，再來你只要按照正常方式安裝requests及Beautiful即可
 
 ```
 c:\myfolder> pip install requests
 c:\myfolder> pip install beautifulsoup4
 ```
-接下來你只要執行以下指令```python crawlerino.py```, 接下來你就會看到輸出結果如下圖所示:
+接下來你只要執行以下指令```python crawlerino.py```, 你就會看到輸出結果如下圖所示:
 
 ![screenshot](images/testrun.png)
 

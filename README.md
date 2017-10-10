@@ -1,5 +1,6 @@
 <properties LandingPageTags="Python,webscraping,webcrawling" />
-# crawlerino - 一個簡單的 Python 3 網頁爬蟲　
+# crawlerino 
+- 一個簡單的 Python 3 網頁爬蟲　
 Crawlerino 是一個python 3 的網頁爬蟲，它的設計理念是方便的讓你客制化來完成各種可能需要網頁爬蟲的任務
 因此，要注意，它被設計成”容易維護及擴充”，而不是”高效”　
 

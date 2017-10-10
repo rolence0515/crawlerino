@@ -24,8 +24,10 @@ c:\myfolder> pip install beautifulsoup4
 
 ![screenshot](images/testrun.png)
 
-## Customization
-As it stands, crawlerino simply crawls the links on pages and it doesn't do anything with the content it finds. To add your custom processing, insert code at **step 3** in the diagram below (line 38 in the source code). There you have access to the current page as either ```response``` (from requests.get) or ```soup``` (the parsed version from Beautiful Soup).
+## 客制化
+crawlerino只是單純的下載網頁，並沒有對內容進行任何的剖析，當然你不會希望只是這樣，你可以從程式碥的第38行開始動手對網頁進行剖析，這裏對應到方面流程圖中的 **step 3**
+在這段程式中，你可以存取```response``` (來至 requests.get) 或 ```soup```　（可想而知，這是Beautiful Soup的剖析物件).
+
 
 In some cases, you may also want to customize the rules for recursively scanning links, to ignore certain types of links or destination, add authentication, enforce robots.txt, and so on. This is **step 4** in the diagram below (lines 42-50 in the source code). The basic concept there is that ```links``` is a list of the links from the current page that should be added to the crawling queue, and you can edit the content of ```links``` as desired before it gets added to the queue in line 55.
 

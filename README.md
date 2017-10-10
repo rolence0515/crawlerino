@@ -12,8 +12,8 @@ Crawlerino 是一個python 3 的網頁爬蟲，它的設計理念是方便的讓
 它使用 ```requests``` 及 ```Beautiful Soup (bs4)```組件，讓程式碼看上去更清爽
 
 
-## Installation
-Since crawlerino is simply intended as a starting point for customization, it isn't packaged as a Python module. But there are only two dependencies so it's easy to install manually. You need to have Python 3.x installed, and then you just need to install requests and Beautiful Soup:
+## 安裝
+crawlenino 並沒有包裝成python組件，不過，不引響你使用它，它只依賴了兩個組件，所以你大可自已安裝它們，當然python 3.x是必要的，再來你只要按照正常方式安裝requests及Beautiful即可
 
 ```
 c:\myfolder> pip install requests

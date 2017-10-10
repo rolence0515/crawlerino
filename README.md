@@ -30,8 +30,9 @@ crawlerino只是單純的下載網頁，並沒有對內容進行任何的剖析�
 在這段程式中，你可以存取```response``` (來至 requests.get) 或 ```soup```　（可想而知，這是Beautiful Soup的剖析物件).
 
 
-In some cases, you may also want to customize the rules for recursively scanning links, to ignore certain types of links or destination, add authentication, enforce robots.txt, and so on. This is **step 4** in the diagram below (lines 42-50 in the source code). The basic concept there is that ```links``` is a list of the links from the current page that should be added to the crawling queue, and you can edit the content of ```links``` as desired before it gets added to the queue in line 55.
+在某些情況下，你可以需要遞迴來處理你的連結，或者是忽略特定的連結網站、網站授權要求等等，你可以在**step 4** 處理這些有關連結的過濾(程式碼第 42-50 行)　
+你只要記得 ```links``` 就是當前頁面的所有連結，而且即將被放進爬蟲的queue 裏面，你可以在它們被放到queu前加工它們（第55行程式碼）.
 
 ![flowchart](images/flowchart.png)
 
-For more information about the approach taken, see the blog post [Crawling the web with Python 3.x](http://mahugh.com/2015/12/12/crawling-the-web-with-python-3-x/).
+更多資訊請看原作都的部落格文章，我們感激他[Crawling the web with Python 3.x](http://mahugh.com/2015/12/12/crawling-the-web-with-python-3-x/).

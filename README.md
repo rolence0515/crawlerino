@@ -8,7 +8,7 @@ Crawlerino 是一個python 3 的網頁爬蟲，它的設計理念是方便的讓
 以下說明crawlerino不處理什麼:
 
 * 它不處理架構的問題
-* It doesn't spoof headers. Again, easy to add via requests if desired.
+* 它不會因為偽裝的需要而加工你的headers.如果有需要，你完全可以自已處理 requests.
 * 它忽略robots.txt.
 cd 
 它使用 ```requests``` 及 ```Beautiful Soup (bs4)```組件，讓程式碼看上去更清爽

@@ -26,7 +26,7 @@ c:\myfolder> pip install beautifulsoup4
 ![screenshot](images/testrun.png)
 
 ## 客制化
-crawlerino只是單純的下載網頁，並沒有對內容進行任何的剖析，當然你不會希望只是這樣，你可以從程式碥的第38行開始動手對網頁進行剖析，這裏對應到方面流程圖中的 **step 3**
+crawlerino只是單純的下載網頁，並沒有對內容進行任何的剖析，當然你不會希望只是這樣，你可以從程式碼的第38行開始動手對網頁進行剖析，這裏對應到下面流程圖中的 **step 3**  
 在這段程式中，你可以存取```response``` (來至 requests.get) 或 ```soup```　（可想而知，這是Beautiful Soup的剖析物件).
 
 

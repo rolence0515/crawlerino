@@ -1,15 +1,16 @@
 <properties LandingPageTags="Python,webscraping,webcrawling" />
-# crawlerino - simple Python 3 web crawler
-Crawlerino 是一個python 3 的網頁爬蟲
-is a web crawler written in Python 3, and is intended to be used as a starting point for building customized web crawlers to perform various tasks. NOTE: the code is optimized for *readability and flexibility*, not for performance.
+# crawlerino - 一個簡單的 Python 3 網頁爬蟲　
+Crawlerino 是一個python 3 的網頁爬蟲，它的設計理念是方便的讓你客制化來完成各種可能需要網頁爬蟲的任務
+因此，要注意，它被設計成”容易維護及擴充”，而不是”高效”　
 
-The emphasis here is on simplicity, and to that end here are some things that crawlerino does _not_ handle:
+以下說明crawlerino不處理什麼:
 
-* It doesn't handle authentication, although the use of requests makes this easy to add if needed.
+* 它不處理架構的問題
 * It doesn't spoof headers. Again, easy to add via requests if desired.
-* It ignores robots.txt.
+* 它忽略robots.txt.
 
-It uses the ```requests``` and ```Beautiful Soup (bs4)``` modules, which help keep the code as simple as possible.
+它使用 ```requests``` 及 ```Beautiful Soup (bs4)```組件，讓程式碼看上去更清爽
+
 
 ## Installation
 Since crawlerino is simply intended as a starting point for customization, it isn't packaged as a Python module. But there are only two dependencies so it's easy to install manually. You need to have Python 3.x installed, and then you just need to install requests and Beautiful Soup:

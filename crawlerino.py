@@ -1,9 +1,4 @@
-"""Simple Python 3 web crawler, to be extended for various uses.
 
-Prerequisites:
-pip install requests
-pip install beautifulsoup4
-"""
 import collections
 import string
 
@@ -22,17 +17,17 @@ def crawler(startpage, maxpages=100, singledomain=True):
     singledomain = whether to only crawl links within startpage's domain
     """
 
-    pagequeue = collections.deque() # queue of pages to be crawled
+    pagequeue = collections.deque() # 即將被下載的頁面的queue
     pagequeue.append(startpage)
-    crawled = [] # list of pages already crawled
+    crawled = [] # 已爬過的頁面
     domain = urlparse(startpage).netloc if singledomain else None
 
-    pages = 0 # number of pages succesfully crawled so far
-    failed = 0 # number of links that couldn't be crawled
+    pages = 0 # 至今成功爬取的頁面數
+    failed = 0 # 失敗的頁面數
 
-    sess = requests.session() # initialize the session
+    sess = requests.session() # 初始化session
     while pages < maxpages and pagequeue:
-        url = pagequeue.popleft() # get next page to crawl (FIFO queue)
+        url = pagequeue.popleft() # 取得下一個代下載的頁面 (FIFO queue)
 
         # read the page
         try:
@@ -43,17 +38,17 @@ def crawler(startpage, maxpages=100, singledomain=True):
             failed += 1
             continue
         if not response.headers['content-type'].startswith('text/html'):
-            continue # don't crawl non-HTML content
+            continue # 非HTML的頁面不處理
 
-        # Note that we create the Beautiful Soup object here (once) and pass it
-        # to the other functions that need to use it
+        # 注意，我們在這裏建立 Beautiful Soup 物件
+        # 並將它傳入子函式使用
         soup = bs4.BeautifulSoup(response.text, "html.parser")
 
-        # process the page
+        # 處理頁面
         crawled.append(url)
         pages += 1
         if pagehandler(url, response, soup):
-            # get the links from this page and add them to the crawler queue
+            # 取得頁面中的所有連結，並放到crawler queue裏面
             links = getlinks(url, domain, soup)
             for link in links:
                 if not url_in_list(link, crawled) and not url_in_list(link, pagequeue):
